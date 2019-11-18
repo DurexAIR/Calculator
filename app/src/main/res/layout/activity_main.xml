@@ -1,39 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    >
 
-    <EditText
-        android:id="@+id/login"
-        android:layout_marginTop="30dp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:hint="用户名"
-        android:background="@drawable/edittext_bian"
-        />
-    <EditText
-        android:id="@+id/password"
-        android:drawableTop=""
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:hint="密码"
-        android:inputType="textPassword"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/edittext_bian"
-        />
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button_jian"
-        android:text="登录"
-        />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
 
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+
+                android:id="@+id/btn_signin"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ZC"
+                android:textSize="20sp"
+                android:background="@drawable/btn_bg_round_click"
+                android:textColor="@drawable/btn_click_text_color"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:shadowColor="#111111"
+                android:background="@drawable/btn_bg_round_click"
+                android:textColor="@drawable/btn_click_text_color"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
