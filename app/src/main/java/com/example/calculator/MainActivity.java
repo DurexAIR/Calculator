@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
-
+//这是新加的
 
 public class MainActivity extends AppCompatActivity {
     private Button bt1;
